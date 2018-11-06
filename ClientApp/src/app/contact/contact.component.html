@@ -1,0 +1,20 @@
+<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+<div id="full" style="position: relative;">
+  <div id="success" [@successAnimation]="stateS">
+    Submitted, your message will be replied within 3 days.<br>
+  </div>
+  <div id="wrapper" style="margin-top: 10%;width: 100%; text-align: center;">
+    <h1 style="font-size:4em;">Contact Me</h1>
+    <br>
+    <div id ="registration_wrapper" style="font-size: 2em; width:30%;display: inline-block;">
+      <label for="name" style="text-align: left;width: 80%;"> NAME <span style="color:red;font-size: 12px;">required</span> <br>
+        <input type="text"  [(ngModel)]="submit_message.name" name="name" style="width:100%;"></label><br>
+      <label for="email" style="text-align: left;width: 80%;"> EMAIL  <span style="color:red;font-size: 12px;">required</span> <br>
+        <input type="email"  [(ngModel)]="submit_message.email" name="email" style="width:100%;"></label><br>
+      <label for="message" style="text-align: left; width: 80%;"> MESSAGE <br>
+        <textarea  [(ngModel)]="submit_message.message" name="message" style="width:100%;height:250px;font-size: 0.5em;"></textarea></label><br>
+      <button (click)="onSubmit()" id="button" [disabled]="level" style="background-color: white;border:none;font-size: 1.5em;">SEND</button>
+    </div>
+    <h3 style="color:red;">{{message}}</h3>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+*{
+    font-family: 'Teko', sans-serif;
+}
+#success{
+    display: inline-block;
+    width: 70%;
+    position: absolute;
+    font-size: 5em;
+    top:30%;
+    left:20%;
+}

@@ -1,0 +1,58 @@
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  .body-content {
+    padding-top: 50px;
+  }
+}
+*{
+  text-align: center;
+  overflow-x: hidden;
+}
+#page{
+  width:100%;
+  height:100%;
+  text-align: center;
+}
+#homeButton{
+  position: fixed;
+  top:5%;
+  left:5%;
+  visibility: hidden;
+}
+#profileButton{
+  position: fixed;
+  top:5%;
+  right:5%;
+  visibility: hidden;
+}
+#contactButton{
+  position: fixed;
+  top:90%;
+  left:5%; 
+  visibility: hidden;
+}
+#links{
+  display: inline-block;
+  position: fixed;
+  top:90%;
+  right:5%;
+  visibility: hidden;
+}
+#homeButton:hover{
+  font-size: 1.2em;
+}
+#profileButton:hover{
+  font-size: 1.2em; 
+}
+#contactButton:hover{
+  font-size: 1.2em; 
+}
+#l1:hover{
+  border:1px solid black;
+}
+#l2:hover{
+  border:1px solid black;
+}
+#l3:hover{
+  border:1px solid black;
+}

@@ -1,0 +1,18 @@
+<div id="page" class="routeContainer" [@routeAnimation]="getDepth(myOutlet)">
+  <router-outlet #myOutlet="outlet"></router-outlet>
+</div>
+<button [routerLink]='["/"]' style="border:none;background-color: transparent;" id="homeButton">Home</button>
+<button [routerLink]='["/profile"]' style="border:none;background-color: transparent;" id="profileButton">Profile</button>
+<button [routerLink]='["/contact"]' style="border:none;background-color: transparent;" id="contactButton">Contact</button>
+
+<div id="links">
+  <a href="https://github.com/shawnwnha" style="display: inline-block; vertical-align: top;">
+    <img id = "l1" src="../assets/img/Git.png" style="width:1.5em;height:1.5em;">
+  </a>
+  <a href="https://www.linkedin.com/in/shawnnha/" style="display: inline-block; vertical-align: top;">
+    <img id = "l2" src="../assets/img/LinkedIn.png" style="width:1.5em;height:1.5em;">
+  </a>
+  <a href="https://twitter.com/ShawnWNha" style="display: inline-block;">
+    <img id = "l3" src="../assets/img/Twitter.png" style="width:1.5em;height:1.5em;">
+  </a>
+</div>

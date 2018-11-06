@@ -1,0 +1,113 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+<div id="wrapper" style="width: 100%; text-align: center;">
+  <div id="contents" style="width: 100%; height:3500px; display: inline-block;overflow: hidden;">
+    <h1 class="ml11">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters">Software Developer</span>
+      </span>
+    </h1>
+    <h1 class="ml12">
+      <span class="text-wrapper2">
+        <span class="line2 line3"></span>
+        <span class="letters2">
+          Creativity and Technology
+        </span>
+      </span>
+    </h1>
+    <div class="box" [@scrollAnimation]="state">
+      <div id="profile_wrapper">
+        <div id="intro" > This is Shawn Nha, a software engineer with knowledge of C#, Python, Java, JavaScript.<br>
+            With over two years of business analysis and military stratigic plannings, possesses strong leadership and problem-solving skills. As a motivated developer, conveys strong communication between project members, and translates ideas fast into synthesized application functionalities.</div>
+        <div id="profile_general">          
+          <br>
+          <p style="font-size: 2em;text-decoration: underline;font-weight: bold;">Education </p>
+          <p style="font-size: 1.4em;">Coding Dojo, Bellevue, WA </p> 
+          <p style="font-size: 1.2em;font-style: italic">Certificate of Achievement in Full-Stack Development</p>
+          <p style="font-size: 1.4em;">University of Wisconsin, Madison</p>
+          <p style="font-size: 1.2em;font-style: italic">Bachaler of Arts in Economics & Entrepreneurship '17</p>
+          <br>
+          <p style="font-size:  2em;text-decoration: underline;font-weight: bold;">Work Experience</p>
+          <p style="font-size: 1.4em;">- Support Coordinator at <span style="font-weight: bold;">RobertHalf Staffing</span></p>
+          <p style="font-size:  1.1em;font-style: italic"> &nbsp;&nbsp;&nbsp; October 2017 - March 2018</p>
+          <p style="font-size: 1.4em;">- Property Manager at <span style="font-weight: bold;">MonVerre Property Management</span></p>
+          <p style="font-size:  1.1em;font-style: italic"> &nbsp;&nbsp;&nbsp; May 2017 – September 2017</p>
+          <p style="font-size: 1.4em;">- Sergeant / Squad Leader at <span style="font-weight: bold;">213 Regiment Intel-Division</span></p>
+          <p style="font-size:  1.1em;font-style: italic"> &nbsp;&nbsp;&nbsp; March 2013 – December 2014</p>
+          <p style="font-size: 1.4em;">- Intern Analyst at <span style="font-weight: bold;">The Korea Times</span></p>
+          <p style="font-size:  1.1em;font-style: italic"> &nbsp;&nbsp;&nbsp; June 2011 – August 2011</p>
+          <br><br>
+          <a id="resume" href="../../assets/img/Resume.pdf" download="Shawn Nha" style="font-size: 2em; color:black;">Click to download: Resume</a>
+        </div>
+        <div id="profile_skills">    
+          <div id="profile_showSkills">
+            <p style="font-size: 2em;text-decoration: underline;font-weight: bold;">Programming skills</p>
+            <br>
+            <table style="display: inline-block;font-size: 1.2em">
+              <tr>
+                <td>Languages:</td>
+                <td>Python, JavaScript, C#, Java</td>
+              </tr><br>
+              <tr>
+                <td>Front-End:</td>
+                <td>HTML5, CSS3, jQuery, AJAX</td>
+              </tr><br>
+              <tr>
+                <td>Frameworks:</td>
+                <td>Django, Flask, Angular.js, Node.js/Express.js <br> ASP.NET Core, Dapper/Entity</td>
+              </tr><br>
+              <tr>
+                <td>Databases:</td>
+                <td>SQL (MySQL, SQLite, PostgreSQL) <br> NoSQL(Mongoose/MongoDB)</td>
+              </tr><br>
+              <tr>
+                <td>Version Control:</td>
+                <td>Git, GitHub</td>
+              </tr><br>
+              <tr>
+                <td>Methodologies:</td>
+                <td>OOP, ORM, MVC/MTV Architecture <br> CRUD, RESTful API</td>
+              </tr><br>
+              <tr>
+                <td>Cloud Platforms:</td>
+                <td>AWS, Azure</td>
+              </tr><br>
+            </table>           
+          </div>    
+          <div id="current" [@statusAnimation]="state1">
+            <h1 class="ml13">
+                <span class="text-wrapper3">
+                  <span class="line3 line4"></span>
+                  <span class="letters3">
+                      &nbsp;&nbsp;&nbsp;Currently looking for a junior developer position
+                  </span>
+                </span>
+            </h1>
+          </div> 
+        </div>
+        <hr style="margin-top:15%;">
+        <p style="text-align: right;font-size: 3em;font-weight: bold;font-family: 'Teko', sans-serif;">Projects</p>
+        <div id="porto">
+          <div id ="video1">
+            <video width="100%" height="100%" controls>
+              <source src="../../assets/vid/MappVid.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div id="portfolio_summary" [@portfAnimation]="state2">
+            <p style="margin-top: 3%;"><span style="font-weight: bold; font-size:2em;">Mapp</span> - Map-based Full-Stack web application |<a href="https://github.com/shawnwnha/Mapp-" style="color:#fcbc28;"> Github</a></p>
+            <p>Share live posts on the global map. See nearby 'must' spots and restaurants.</p> 
+            <p>Used Technologies: MEAN(MongoDB,Express.js,AngularJS,Node.js) - JavaScript</p>
+            <p>Used Libraries: Angular Google Map, Auth Guard, jQuery</p> 
+            <p style="margin-top:3%"><span style="font-weight: bold; font-size:2em;">Appoint</span> - Reservation Full-Stack web application |<a href="https://github.com/shawnwnha/Mapp-" style="color:#fcbc28;"> Github</a></p>
+            <p>Make appointments to doctors. Share messages and change schedules</p> 
+            <p>Used Technologies: Django2.0, MySQL server - Python</p>
+            <p style="margin-top:5%;font-weight: bold;font-size: 1.5em;">For more projects, please visit my <a href="https://github.com/shawnwnha/" style="color:#6b7c30;"> Github</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>_____Designed and Developed by Shawn Nha_____</p>
+    <a href="mailto:shawn.w.nha@gmail.com">Shawn.W.Nha@gmail.com</a>
+  </div>
+</div>
